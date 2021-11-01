@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<!--
+  * Please see the included README.md file for license terms and conditions.
+  -->
+
+<head>
+  <title>Dawoodi Bohra App Calendar</title>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+  <!--
+  * The "meta viewport" tag (below) helps your app size appropriately to a device's ideal viewport.
+  * Note that Windows device viewports work better when initialized using the @viewport CSS rule.
+  * For a quick overview of "meta viewport" and @viewport, see this article:
+  *   http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag
+  * To see how it works, try your app on a real device with and without a "meta viewport" tag.
+  * Additional useful references include:
+  *   http://www.quirksmode.org/mobile/viewports.html
+  *   http://www.quirksmode.org/mobile/metaviewport/devices.html
+  *   https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html
+-->
+
+  <!-- <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1"> -->
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimum-scale=1, maximum-scale=2"> -->
+  <link href="calendar.css" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="all.css"
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" href="font-awesome/css/bootstrap.min.css">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+
+  <script>
+    window.onload = function () {
+      $("td.day.today").trigger('click');
+    };
+
+
+  </script>
+
+  <style>
+    body {
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      background-color: rgb(250, 223, 223);
+    }
+
+
+    modal {
+      display: none;
+    }
+
+
+    .hijri:hover {
+      background-color: transparent;
+    }
+
+    .gregorian:hover {
+      background-color: transparent;
+    }
+
+    /* 
+Generic Styling, for Desktops/Laptops 
+*/
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    /* Zebra striping */
+    tr:nth-of-type(odd) {
+      background: #eee;
+    }
+
+
+
+    th {
+      background: #465a65;
+      color: white;
+      font-weight: bold;
+    }
+
+    td,
+    th {
+      padding: 1px;
+
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+
+    td {
+      cursor: pointer;
+
+    }
+
+    td :hover {
+      background-color: #0011ff59;
+      
+
+    }
+  </style>
+
+
+
+</head>
+
+<body class="avoid-fout">
+  <main role="main"></main>
+
+
+
+
+  <br><br><br><br><br>
+  <footer>
+   <center> <img src="logo.png" alt="DawoodiBohraApp"
+    width="50px"></center>
+    <p>&copy; 2021, <a href="https://dawoodibohraapp.blogspot.com/" title="DawoodiBohraApp">DawoodiBohraApp</a> All rights reserved.</p>
+  </footer>
+
+  <script src="calendar.js" type="text/javascript"></script>
+  <script src="jquery.min.js"></script>
+
+
+</body>
+
+</html>

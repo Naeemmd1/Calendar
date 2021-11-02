@@ -628,7 +628,7 @@ main::after {
 .filler .hijri {
     position: absolute;
     top: 0;
-    right: 0;
+    left: 0;
     font-size: 2em;
     line-height: 1.1em;
     padding-right: 0.1em;
@@ -638,7 +638,7 @@ main::after {
 .filler .gregorian {
     position: absolute;
     bottom: 0;
-    left: 0;
+    right: 0;
     padding: 0.2em;
     font-size: 0.8em;
     line-height: 1.1em;
